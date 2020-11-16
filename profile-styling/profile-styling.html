@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Profile Styling</title>
+
+	<style type="text/css">
+		/*
+			Primary color: #d81b60;
+			Primary darker color: #880e4f;
+
+			Sidebar width: 250px;
+
+			Padding across the site: 30px; ( smaller padding will be 15px or 10px)
+		*/
+		body {
+			margin: 0;
+			font-family: Roboto;
+		}
+
+		.container {
+			display: flex;
+			min-height: calc(100vh - 70px);
+			padding-bottom: 30px;
+		}
+
+		.left-content-container {
+			width: 250px;
+		}
+		.right-content {
+			width: 80%
+		}
+		.nav {
+			display: flex;
+			justify-content: flex-end;
+			background-color: #d81b60;
+			padding: 15px;
+		}
+		.nav-text-container {
+			display: flex;
+			align-items: center;
+			color: white;
+		}
+		.nav-text {
+			margin: 0 10px 0 10px;
+		}
+
+		.nav-text:hover {
+			color: #880e4f;
+			cursor: pointer;
+		}
+
+		.logo-container {
+			background-color: #d81b60;
+			padding: 30px;
+		}
+
+		.description-container {
+			padding: 0 30px 30px 30px
+		}
+
+		.gallery-container {
+			padding: 0 30px 30px 30px
+		}
+
+		.gallery-image-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 15px;
+		}
+
+		.photo  {
+			object-fit: cover;
+			width: 100%;
+			max-height: 100%;
+		}
+
+		.profile {
+			padding-top: 30px;
+		}
+
+		.profile-image-container {
+			height: 280px;
+			width: 100%;
+			border-radius: 50%;
+			overflow: hidden;
+			background-color: #fafafa;
+			display: block;
+			margin-left: 10px;
+			box-shadow: 0 15px 2px -2px lightgrey;
+		}
+
+		.profile-image-container img {
+			display:block;
+    		margin:auto;
+		}
+
+		.profile-image {
+			object-fit: cover;
+			width: 100%;
+			margin: auto;
+		}
+
+		.footer {
+			background-color: #424242;
+			display: flex;
+			justify-content: space-between;
+			padding: 15px;
+			height: 20px
+		}
+
+		.footer-text {
+			color: #ffffff;
+			margin: 0 10px 0 10px;
+		}
+
+		.footer-text:hover {
+			color: #000000;
+			cursor: pointer;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="left-content-container">
+			<div class="logo-container">
+				<img width = "200px" height = "50px" src="/profile-styling/images/adeptmind-logo-white.svg" alt="adeptmind-logo">
+			</div>
+			<div class="profile">
+				<div class="profile-image-container">
+					<img  class="profile-image" src="/profile-styling/images/profile-image.png" alt="profile-image">
+				</div>
+			</div>
+		</div>
+		<div class="right-content">
+			<nav class="nav">
+
+				<div class="nav-text-container">
+					<span class="nav-text">Home</span>
+					<span class="nav-text">About</span>
+					<span class="nav-text">Contact</span>
+				</div>
+			</nav>
+			<div class="description-container">
+				<h2>Developer at Adeptmind</h2>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+			</div>
+			<div class="gallery-container">
+				<h3>Gallery</h3>
+				<div class="gallery-image-container">
+					<img class="photo" src="/profile-styling/images/image1.jpg" alt="image1">
+					<img class="photo" src="/profile-styling/images/image2.jpg" alt="image2">
+					<img class="photo" src="/profile-styling/images/image3.jpg" alt="image3">
+					<img class="photo" src="/profile-styling/images/image4.jpg" alt="image4">
+					<img class="photo" src="/profile-styling/images/image5.jpg" alt="image5">
+					<img class="photo" src="/profile-styling/images/image6.jpg" alt="image6">
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="footer-container">
+		<footer class="footer">
+			<div>
+				<span class="footer-text">@ 2018</span>
+			</div>
+			<div class="footer-text-container">
+				<span class="footer-text">Home</span>
+				<span class="footer-text">About</span>
+				<span class="footer-text">Contact</span>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
